@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input id="input1" type="text" readonly>
+        <input id="input2" type="text" readonly>
+        <div class="buttons">
+            <button onclick=" calculation = ''; document.querySelector('#input1').value = calculation; document.querySelector('#input2').value = calculation">C</button>
+            <button onclick=" calculation += '1'; document.querySelector('#input1').value = calculation">1</button>
+            <button onclick=" calculation += '2'; document.querySelector('#input1').value = calculation">2</button>
+            <button onclick=" calculation += '+'; document.querySelector('#input1').value = calculation">+</button>
+            <button onclick=" calculation += '3'; document.querySelector('#input1').value = calculation">3</button>
+            <button onclick=" calculation += '4'; document.querySelector('#input1').value = calculation">4</button>
+            <button onclick=" calculation += '-'; document.querySelector('#input1').value = calculation">-</button>
+            <button onclick=" calculation += '5'; document.querySelector('#input1').value = calculation">5</button>
+            <button onclick=" calculation += '6'; document.querySelector('#input1').value = calculation">6</button>
+            <button onclick=" calculation += '*'; document.querySelector('#input1').value = calculation">*</button>
+            <button onclick=" calculation += '7'; document.querySelector('#input1').value = calculation">7</button>
+            <button onclick=" calculation += '8'; document.querySelector('#input1').value = calculation">8</button>
+            <button onclick=" calculation += '/'; document.querySelector('#input1').value = calculation">/</button>
+            <button onclick=" calculation += '9'; document.querySelector('#input1').value = calculation">9</button>
+            <button onclick=" calculation += '0'; document.querySelector('#input1').value = calculation">0</button>
+            <button onclick=" calculation += '.'; document.querySelector('#input1').value = calculation">.</button>
+            <button onclick=" calculation += '**'; document.querySelector('#input1').value = calculation">^</button>
+            <button onclick=" calculation += document.querySelector('#input2').value; document.querySelector('#input1').value = calculation">Ans </button>
+            <button onclick=" let result = eval(calculation); calculation = ''; document.querySelector('#input1').value = ''; document.querySelector('#input2').value = result">=</button>
+        </div>
+    </div>
+    <script>
+        let calculation = "";
+        document.querySelector('input').value = calculation
+    </script>
+</body>
+</html>
