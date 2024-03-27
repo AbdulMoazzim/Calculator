@@ -26,6 +26,7 @@
             <button onclick=" calculation += '0'; document.querySelector('#input1').value = calculation">0</button>
             <button onclick=" calculation += '.'; document.querySelector('#input1').value = calculation">.</button>
             <button onclick=" calculation += '**'; document.querySelector('#input1').value = calculation">^</button>
+            <button onclick=" calculation = calculation.slice(0,calculation.length-1); document.querySelector('#input1').value = calculation">Del</button>
             <button onclick=" calculation += document.querySelector('#input2').value; document.querySelector('#input1').value = calculation">Ans </button>
             <button onclick=" let result = eval(calculation); calculation = ''; document.querySelector('#input1').value = ''; document.querySelector('#input2').value = result">=</button>
         </div>
